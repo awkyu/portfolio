@@ -7,7 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+import { IconLogo } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -66,9 +66,9 @@ const StyledNav = styled.nav`
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      color: var(--pink);
-      width: 42px;
-      height: 42px;
+      color: var(--red);
+      width: 100px;
+      height: 120px;
       position: relative;
       z-index: 1;
 
@@ -135,7 +135,7 @@ const StyledLinks = styled.div`
         &:before {
           content: '0' counter(item) '.';
           margin-right: 5px;
-          color: var(--pink);
+          color: var(--red);
           font-size: var(--fz-xxs);
           text-align: right;
         }
@@ -185,18 +185,18 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <div className="hex-container">
+          {/* <div className="hex-container">
             <IconHex />
-          </div>
+          </div> */}
           <div className="logo-container">
             <IconLogo />
           </div>
         </a>
       ) : (
         <Link to="/" aria-label="home">
-          <div className="hex-container">
+          {/* <div className="hex-container">
             <IconHex />
-          </div>
+          </div> */}
           <div className="logo-container">
             <IconLogo />
           </div>
