@@ -81,7 +81,7 @@ const StyledProject = styled.li`
     margin-bottom: 35px;
 
     .folder {
-      color: var(--green);
+      color: var(--pink);
       svg {
         width: 40px;
         height: 40px;
@@ -182,6 +182,10 @@ const Projects = () => {
               tech
               github
               external
+              slideshow
+              slideshow1
+              document
+              document1
             }
             html
           }
@@ -213,7 +217,16 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const {
+      github,
+      external,
+      title,
+      tech,
+      slideshow,
+      document,
+      document1,
+      slideshow1,
+    } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -238,13 +251,44 @@ const Projects = () => {
                   <Icon name="External" />
                 </a>
               )}
+              {slideshow && (
+                <a href={slideshow} aria-label="Slideshow Link">
+                  <Icon name="Slideshow" />
+                </a>
+              )}
+              {slideshow1 && (
+                <a href={slideshow1} aria-label="Slideshow Link">
+                  <Icon name="Slideshow" />
+                </a>
+              )}
+              {document && (
+                <a href={document} aria-label="Document Link">
+                  <Icon name="Document" />
+                </a>
+              )}
+              {document1 && (
+                <a href={document1} aria-label="Document Link">
+                  <Icon name="Document" />
+                </a>
+              )}
             </div>
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            {external ? (
+              <a href={external} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+            ) : github ? (
+              <a href={github} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+            ) : (
+              title
+            )}
+            {/* <a href={external} target="_blank" rel="noreferrer">
               {title}
-            </a>
+            </a> */}
           </h3>
 
           <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />

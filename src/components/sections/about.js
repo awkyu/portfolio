@@ -39,7 +39,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--pink);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -61,7 +61,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--pink);
 
     &:hover,
     &:focus {
@@ -105,7 +105,7 @@ const StyledPic = styled.div`
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--pink);
       top: 14px;
       left: 14px;
       z-index: -1;
@@ -125,7 +125,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Python',
+    'React',
+    'Unity',
+    'ML and Deep Learning',
+    'No SQL and SQL Databases',
+    'Solidworks 3D Modeling',
+    'PCB Design with Eagle CAD',
+    'Rasberry Pi and Arduino Development',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +144,24 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Alex and I enjoy tinkering with new technologies in the space of
+              wearable health devices. My interest in wearable health technologies started back in
+              2018 when I founded a student organization called{' '}
+              <a href="https://github.com/packbionics">Pack Bionics</a>, which focused on developing
+              a transfemoral powered leg prosthetic.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Since then, I've had the privilege of working on Surgical Robotics at{' '}
+              <a href="https://www.intuitive.com/en-us">Intuitive</a> and{' '}
+              <a href="https://asensus.com/">Asensus Surgical</a>, healthcare technologies at{' '}
+              <a href="https://optum.com/">Optum, Inc.</a>, customer service interaction systems at{' '}
+              <a href="https://bloomberg.com">Bloomberg L.P.</a>, and wearable devices at CMU as
+              part of my course work with Dr. Eni Halilaj and research with{' '}
+              <a href="https://smashlab.io/">SmaSH Lab</a> under Dr. Mayank Goel.
             </p>
 
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few skills and technologies I’ve been working with:</p>
           </div>
 
           <ul className="skills-list">

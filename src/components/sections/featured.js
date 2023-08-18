@@ -117,7 +117,7 @@ const StyledProject = styled.li`
 
   .project-overline {
     margin: 10px 0;
-    color: var(--green);
+    color: var(--pink);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
     font-weight: 400;
@@ -256,7 +256,7 @@ const StyledProject = styled.li`
     a {
       width: 100%;
       height: 100%;
-      background-color: var(--green);
+      background-color: var(--pink);
       border-radius: var(--border-radius);
       vertical-align: middle;
 
@@ -322,7 +322,9 @@ const Featured = () => {
               tech
               github
               external
-              cta
+              slideshow
+              document
+              gif_cover
             }
             html
           }
@@ -348,18 +350,36 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Some of my Work
       </h2>
 
       <StyledProjectsGrid>
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const {
+              external,
+              title,
+              tech,
+              github,
+              cover,
+              slideshow,
+              document,
+              gif_cover,
+            } = frontmatter;
             const image = getImage(cover);
+            // console.log(gif_cover);
+            // console.log(cover);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+                <div className="project-image">
+                  <a href={external ? external : github ? github : '#'}>
+                    {/* <GatsbyImage image={image} alt={title} className="img" /> */}
+                    {gif_cover && <img src={gif_cover} alt={title} className="img" />}
+                    {cover && <GatsbyImage image={image} alt={title} className="img" />}
+                  </a>
+                </div>
                 <div className="project-content">
                   <div>
                     <p className="project-overline">Featured Project</p>
@@ -382,9 +402,19 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
+                      {/* {cta && (
                         <a href={cta} aria-label="Course Link" className="cta">
                           Learn More
+                        </a>
+                      )} */}
+                      {slideshow && (
+                        <a href={slideshow} aria-label="Slideshow Link">
+                          <Icon name="Slideshow" />
+                        </a>
+                      )}
+                      {document && (
+                        <a href={document} aria-label="Document Link">
+                          <Icon name="Document" />
                         </a>
                       )}
                       {github && (
@@ -392,19 +422,13 @@ const Featured = () => {
                           <Icon name="GitHub" />
                         </a>
                       )}
-                      {external && !cta && (
+                      {external && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
                         </a>
                       )}
                     </div>
                   </div>
-                </div>
-
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
                 </div>
               </StyledProject>
             );
