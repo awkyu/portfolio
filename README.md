@@ -8,7 +8,7 @@
   The first iteration of <a href="https://www.alexkyu.com" target="_blank">www.alexkyu.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  Based on <a href="v4.brittanychiang.com/">v4.brittanychiang.com/</a> - <a href="https://github.com/bchiang7/v4">Github Link</a>
+  Based on <a href="www.v4.brittanychiang.com/">v4.brittanychiang.com/</a> - <a href="https://github.com/bchiang7/v4">Github Link</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/alexkyu/deploys" target="_blank">
