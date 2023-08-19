@@ -72,7 +72,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 
 ### From Alex:
 
-I personally used nvm 1.1.11 and npm 6.14.11 to get this repo to build correctly.
+I personally used node v14.16.0 nvm 1.1.11 and npm 6.14.11 to get this repo to build correctly.
 
 ## 🎨 Color Reference
 
