@@ -2,26 +2,23 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  brittanychiang.com - v4
+  www.alexkyu.com
 </h1>
 <p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://www.alexkyu.com" target="_blank">www.alexkyu.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
+  Based on v4.brittanychiang.com/ <a href="https://github.com/bchiang7/v4">github</a>
 </p>
 <p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+  <a href="https://app.netlify.com/sites/alexkyu/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/22ae068b-7429-4e6e-a450-e69a6f90610b/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+![demo](https://raw.githubusercontent.com/awkyu/portfolio/main/src/images/demo.png)
 
-## 🚨 Forking this repo (please read!)
+## 🚨 Forking this repo from Brittany (please read!)
 
 Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
 
@@ -73,6 +70,10 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
    npm run serve
    ```
 
+### From Alex:
+
+I personally used nvm 1.1.11 and npm 6.14.11 to get this repo to build correctly.
+
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
@@ -85,3 +86,13 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 | Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
 | White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
 | Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+
+### Additional Colors I added and used instead of the green.
+
+| Color     | Hex                                                                |
+| --------- | ------------------------------------------------------------------ |
+| Red       | ![#ff4263](https://via.placeholder.com/10/ff4263?text=+) `#ff4263` |
+| Dark Red  | ![#982338](https://via.placeholder.com/10/982338?text=+) `#982338` |
+| Pink      | ![#f57dff](https://via.placeholder.com/10/f57dff?text=+) `#f57dff` |
+| Cyan Blue | ![#57CBFF](https://via.placeholder.com/10/57CBFF?text=+) `#57CBFF` |
+| Purple    | ![#b362ff](https://via.placeholder.com/10/b362ff?text=+) `#b362ff` |
