@@ -3,7 +3,7 @@ import React from 'react';
 const IconLoader = () => (
   <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
     <title>Loader Logo</title>
-    <g>
+    <g transform="translate(50.000000, 0)">
       <path
         stroke="currentColor"
         strokeWidth="5"

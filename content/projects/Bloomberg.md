@@ -6,7 +6,7 @@ external: 'https://mhci-bb-2023.netlify.app'
 # slideshow: './Cybathlon_BurroughsWellcomeFund_Presentation.pptx'
 # document: './Kyu_Alex_ProjectPart3_Report.pdf'
 # document1: ''
-company: 'Bloomberg LLP'
+company: 'Bloomberg L.P.'
 tech:
   - Figma
   - Microsoft Forms
