@@ -260,7 +260,7 @@ const StyledProject = styled.li`
       opacity: 0.25;
     }
 
-    a {
+    .featured_img {
       width: 100%;
       height: 100%;
       background-color: var(--red);
@@ -461,11 +461,14 @@ const Featured = () => {
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
                 <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    {/* <GatsbyImage image={image} alt={title} className="img" /> */}
+                  {/* <a href={external ? external : github ? github : '#'}>
+                    {gif_cover && <img src={gif_cover} alt={title} className="img feature-img" />}
+                    {cover && <GatsbyImage image={image} alt={title} className="img feature-img" />}
+                  </a> */}
+                  <div className="featured_img">
                     {gif_cover && <img src={gif_cover} alt={title} className="img" />}
                     {cover && <GatsbyImage image={image} alt={title} className="img" />}
-                  </a>
+                  </div>
                 </div>
                 <div className="project-content">
                   <div>
