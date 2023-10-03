@@ -3,8 +3,8 @@ date: '2022-05-04'
 title: 'PackBionics'
 github: 'https://github.com/packbionics'
 external: 'https://cybathlon.ethz.ch/en'
-slideshow: 'https://docs.google.com/presentation/d/1sXZv2R0GJrZIfiwZQ1yhLFEU32j91KJk/'
-slideshow1: 'https://docs.google.com/presentation/d/1bH-MCEBNXO3JLoL77CwUzgYNapyrF9CX/'
+slideshow: 'https://docs.google.com/presentation/d/1sBLo-D_ulivhcwJXUTauZuW2VkoagAXi/edit?usp=drive_link&ouid=112425883361783061070&rtpof=true&sd=true'
+slideshow1: 'https://docs.google.com/presentation/d/1wpRIQkXFgAjGLPrg_nIGCT_ARtv_PEhA/edit?usp=drive_link&ouid=112425883361783061070&rtpof=true&sd=true'
 company: 'North Carolina State University'
 tech:
   - EAGLE CAD
