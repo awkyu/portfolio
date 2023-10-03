@@ -10,6 +10,7 @@ tech:
   - React
   - XCode
   - Google Firebase
+project_type: 'design'
 ---
 
 An augmented reality app for iOS to draw in both 3D and 2D. This project was built using Unity and deployed with XCode and has an accompanying web-app where drawings are stored via a Google Firebase backend database.

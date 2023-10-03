@@ -45,13 +45,13 @@ const Contact = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+  // useEffect(() => {
+  //   if (prefersReducedMotion) {
+  //     return;
+  //   }
 
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  //   sr.reveal(revealContainer.current, srConfig());
+  // }, []);
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>

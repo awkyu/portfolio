@@ -1,18 +1,16 @@
 ---
-date: '1'
-title: 'Comparison of Lower-body Kinematics Estimation Using IMUs'
-cover: './WHT_cover.png'
+date: '6'
+title: 'IMU-to-Terrain Classification'
+github: 'https://github.com/awkyu/imu_to_terrain_classification'
+cover: './imutoterrainclassification.png'
 # gif: ''
 # external: 'https://halcyon-theme.netlify.com/'
-document: './team1_final_report_new.pdf'
-slideshow: './Team 1_final Presentation.pptx'
+document: './Team42_ProjC2_TechnicalReport.pdf'
+# slideshow: './Team 1_final Presentation.pptx'
 tech:
-  - Python
-  - MATLAB
-  - OpenSense
-  - Sensor Fusion
-  - XSens
-  - MoCap
+  - Tensorflow and Keras
+  - Jupyter Notebooks
+  - Neural Networks
 project_type: 'mlsp'
 ---
 

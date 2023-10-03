@@ -130,6 +130,7 @@ const GlobalStyle = createGlobalStyle`
 
     &.fillHeight {
       padding: 0 150px;
+      position: relative;
 
       @media (max-width: 1080px) {
         padding: 0 100px;
@@ -147,6 +148,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     padding: 100px 0;
     max-width: 1000px;
+    position: relative;
 
     @media (max-width: 768px) {
       padding: 80px 0;

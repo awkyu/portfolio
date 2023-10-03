@@ -61,12 +61,17 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Alexander Kyu.</h2>;
-  const three = <h3 className="big-heading">I'm passionate about wearables devices.</h3>;
+  const three = (
+    <h3 className="big-heading">
+      I'm a software tinkerer, generative AI enthusiast, and HCI researcher and designer.
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I’m a full-stack engineer specializing in HCI and prototyping interaction devices around
-        wearables for human digitization. Currently, I'm finishing up my Master's Degree in{' '}
+        I’m a full-stack software engineer specializing in Human-Computer Interaction (HCI), curious
+        about how to bring generative AI to the next generation of human-computer interaction
+        devices. I just finished my Master's Degree in{' '}
         <a href="https://hcii.cmu.edu/academics/mhci">Human-Computer Interaction (MHCI)</a> at
         Carnegie Mellon University. Previously, I completed my Bachelor's Degree in Biomedical and
         Health Sciences Engineering from{' '}

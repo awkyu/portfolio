@@ -7,10 +7,7 @@ range: 'January - December 2020, May - August 2022'
 url: 'https://www.intuitive.com/en-us'
 ---
 
-- Designed and improved automated testing efforts for language support
-- Automated database testing through UI interactions
-- Integrated moving 3D model of robotic system using React as part of an internal development tool
-- Executed software protocols to ensure the quality of ISI's robotics for FDA regulatory approval
-- Automated test protocols through Python script development
-- Wrote and reviewed Quality Management Reports for FDA regulatory approval
-- Designed and developed backend software applications to improve testing analytics
+- Designed and Improved automated testing efforts for System Tests using Pytest and PyQT frameworks.
+- Integrated and programmed real-time robotic kinematic data into internal development tools for 3D system visualization using ReactJS.
+- Integrated Snowflake DB real-world (anonymized) surgical robotics data to improve the accuracy of simulated surgical testing.
+- Executed software protocols to ensure the quality of ISI’s robotics for FDA regulatory approval.

@@ -200,17 +200,17 @@ const Projects = () => {
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+  // useEffect(() => {
+  //   if (prefersReducedMotion) {
+  //     return;
+  //   }
 
-    sr.reveal(revealTitle.current, srConfig());
-    sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+  //   sr.reveal(revealTitle.current, srConfig());
+  //   sr.reveal(revealArchiveLink.current, srConfig());
+  //   revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+  // }, []);
 
-  const GRID_LIMIT = 6;
+  const GRID_LIMIT = 3;
   const projects = data.projects.edges.filter(({ node }) => node);
   const firstSix = projects.slice(0, GRID_LIMIT);
   const projectsToShow = showMore ? projects : firstSix;

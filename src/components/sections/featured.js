@@ -7,6 +7,9 @@ import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
 
@@ -25,6 +28,10 @@ const StyledProject = styled.li`
 
   @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.boxShadow};
+  }
+
+  &:first-of-type {
+    margin-top: 50px;
   }
 
   &:not(:last-of-type) {
@@ -323,8 +330,10 @@ const Featured = () => {
               github
               external
               slideshow
+              slideshow1
               document
               gif_cover
+              project_type
             }
             html
           }
@@ -333,10 +342,66 @@ const Featured = () => {
     }
   `);
 
+  const StyledToggleButton = styled(ToggleButton)`
+    && {
+      background-color: ${props =>
+        props.selectedValue === props.value ? 'var(--red)' : 'transparent'};
+      color: ${props => (props.selectedValue === props.value ? 'var(--dark-navy)' : 'var(--red)')};
+      border: 1px solid var(--red);
+      font: var(--font-mono);
+      font-size: var(--fz-md);
+      text-transform: none;
+      position: sticky;
+      top: 60px;
+      z-index: 1000;
+
+      &:hover {
+        background-color: var(--red);
+        color: var(--primary-text-color);
+      }
+      &.Mui-selected {
+        background-color: var(--red);
+        color: --dark-navy;
+
+        &:hover {
+          background-color: var(--red);
+        }
+      }
+
+      @media (max-width: 600px) {
+        font-size: var(--fz-xxs);
+      }
+    }
+  `;
+
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const [selected, setSelected] = React.useState('all');
+  // const [featuredProjectsFiltered, setFeaturedProjectsFiltered] = React.useState(featuredProjects.filter(({ node }) => node.frontmatter.project_type === selected));
+  const [featuredProjectsFiltered, setFeaturedProjectsFiltered] = React.useState(featuredProjects);
+
+  const handleSelection = (event, newSelection) => {
+    if (newSelection != selected && newSelection != null) {
+      setSelected(newSelection);
+
+      if (newSelection === 'all') {
+        setFeaturedProjectsFiltered(featuredProjects);
+      } else {
+        setFeaturedProjectsFiltered(
+          featuredProjects.filter(({ node }) => node.frontmatter.project_type === newSelection),
+        );
+      }
+    }
+  };
+
+  const proj_type_dict = {
+    mlsp: 'ML and Signal Processing',
+    simulation: 'Software Simulations',
+    design: 'Engineering and Design',
+  };
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -349,13 +414,32 @@ const Featured = () => {
 
   return (
     <section id="projects">
-      <h2 className="numbered-heading" ref={revealTitle}>
+      <h2 className="numbered-heading" ref={revealTitle} position="sticky" top="60px">
         Some of my Work
       </h2>
 
+      <ToggleButtonGroup
+        value={selected}
+        exclusive
+        onChange={handleSelection}
+        aria-label="project filter">
+        <StyledToggleButton value="all" selectedValue={selected}>
+          All
+        </StyledToggleButton>
+        <StyledToggleButton value="mlsp" selectedValue={selected}>
+          ML and Signal Processing
+        </StyledToggleButton>
+        <StyledToggleButton value="simulation" selectedValue={selected}>
+          Software Simulations
+        </StyledToggleButton>
+        <StyledToggleButton value="design" selectedValue={selected}>
+          Engineering and Design
+        </StyledToggleButton>
+      </ToggleButtonGroup>
+
       <StyledProjectsGrid>
-        {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
+        {featuredProjectsFiltered &&
+          featuredProjectsFiltered.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const {
               external,
@@ -364,12 +448,15 @@ const Featured = () => {
               github,
               cover,
               slideshow,
+              slideshow1,
               document,
               gif_cover,
+              project_type,
             } = frontmatter;
             const image = getImage(cover);
             // console.log(gif_cover);
             // console.log(cover);
+            // console.log(i);
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
@@ -382,7 +469,9 @@ const Featured = () => {
                 </div>
                 <div className="project-content">
                   <div>
-                    <p className="project-overline">Featured Project</p>
+                    <p className="project-overline">
+                      Featured Project - {proj_type_dict[project_type]}
+                    </p>
 
                     <h3 className="project-title">
                       <a href={external}>{title}</a>
@@ -409,6 +498,11 @@ const Featured = () => {
                       )} */}
                       {slideshow && (
                         <a href={slideshow} aria-label="Slideshow Link">
+                          <Icon name="Slideshow" />
+                        </a>
+                      )}
+                      {slideshow1 && (
+                        <a href={slideshow1} aria-label="Slideshow Link">
                           <Icon name="Slideshow" />
                         </a>
                       )}

@@ -11,6 +11,7 @@ tech:
   - Microsoft Forms
   - G-Suite
   - React
+project_type: 'design'
 ---
 
 For my capstone for my Master's of Human-Computer Interaction, my team and I worked with Bloomberg to enhance workflows and knowledge sharing within their customer support department, focusing on the design of a new workflow to capture data within their offline communication channels that they commonly used. This project involved applying various UX research and design methods.

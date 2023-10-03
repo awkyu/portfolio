@@ -7,7 +7,7 @@ range: 'May - August 2019'
 url: 'https://optum.com/'
 ---
 
-- Learned about healthcare through firsthand interviews with doctors and insurance providers
-- Conducted market research on Shared Decision-Making in primary care and related Software
-- Developed backend software, APIs, and databases managing healthcare and treatment data
-- Created a novel Shared Decision-Making software service for providers and patients
+- Developed backend software, RESTful APIs, and databases managing healthcare and treatment data.
+- Designed and Implemented a novel Shared Decision-Making software service for providers and patients.
+- Conducted interviews with doctors and insurance providers to learn about healthcare and treatment decision-making for patients.
+- Conducted market research on Shared Decision-Making in primary care and related Software.

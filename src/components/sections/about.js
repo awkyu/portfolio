@@ -130,7 +130,7 @@ const About = () => {
     'React',
     'Unity',
     'ML and Deep Learning',
-    'No SQL and SQL Databases',
+    'NoSQL and SQL Databases',
     'Solidworks 3D Modeling',
     'PCB Design with Eagle CAD',
     'Rasberry Pi and Arduino Development',
@@ -145,10 +145,9 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Alex and I enjoy tinkering with new technologies in the space of
-              wearable health devices. My interest in wearable health technologies started back in
-              2018 when I founded a student organization called{' '}
-              <a href="https://github.com/packbionics">Pack Bionics</a>, which focused on developing
-              a transfemoral powered leg prosthetic.
+              human-computer interaction. My interest started back in 2018 when I founded a student
+              organization called <a href="https://github.com/packbionics">Pack Bionics</a>, which
+              focused on developing a transfemoral powered-leg prosthetic.
             </p>
 
             <p>
