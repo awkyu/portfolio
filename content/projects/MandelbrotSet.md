@@ -8,7 +8,7 @@ github: 'https://github.com/awkyu/mandelbrot_set'
 # document: './Provisional Patent.pdf'
 tech:
   - Python
-showInProjects: false
+showInProjects: True
 ---
 
-Simple implementation to generate pictures from the Mandelbrot Set. Further improvements could be done to parellelize computation using CUDA which would utilize the advantages of the GPU.
+Very simple implementation to generate pictures from the Mandelbrot Set. Further improvements could be done to parellelize computation using CUDA which would utilize the advantages of the GPU.

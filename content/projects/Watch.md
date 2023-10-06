@@ -10,7 +10,7 @@ company: 'North Carolina State University'
 tech:
   - SOLIDWORKS
   - Arduino
-showInProjects: false
+showInProjects: true
 ---
 
 This was a small introduction to microcontrollers project that involved making a "smart watch" that records biometric data of choice while also keeping track of various other parameters like time.
