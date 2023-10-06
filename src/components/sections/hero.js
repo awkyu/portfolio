@@ -75,8 +75,8 @@ const Hero = () => {
         <a href="https://hcii.cmu.edu/academics/mhci">Human-Computer Interaction (MHCI)</a> at
         Carnegie Mellon University. Previously, I completed my Bachelor's Degree in Biomedical and
         Health Sciences Engineering from{' '}
-        <a href="https://bme.unc.edu/">The Joint Department of BME</a> at UNC Chapel-Hill and North
-        Carolina State University.
+        <a href="https://bme.unc.edu/">The Joint Department of Biomedical Engineering</a> at UNC
+        Chapel-Hill and North Carolina State University.
       </p>
     </>
   );
