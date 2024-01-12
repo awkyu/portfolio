@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '3'
 title: 'Comparison of Lower-body Kinematics Estimation Using IMUs'
 cover: './WHT_cover.png'
 # gif: ''
