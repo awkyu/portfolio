@@ -130,7 +130,7 @@ const About = () => {
     'React',
     'Three.js',
     'Unity',
-    'Tensorflow and Keras',
+    'Scikit-Learn, Tensorflow, and Keras',
     'Transformers and Constrastive Learning',
     'LangChain and Autogen',
     'Figma and Adobe CC',
