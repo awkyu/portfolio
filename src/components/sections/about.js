@@ -128,12 +128,12 @@ const About = () => {
   const skills = [
     'Python',
     'React',
+    'Three.js',
     'Unity',
-    'ML and Deep Learning',
-    'NoSQL and SQL Databases',
-    'Solidworks 3D Modeling',
-    'PCB Design with Eagle CAD',
-    'Rasberry Pi and Arduino Development',
+    'Tensorflow and Keras',
+    'Transformers and Constrastive Learning',
+    'LangChain and Autogen',
+    'Figma and Adobe CC',
   ];
 
   return (
