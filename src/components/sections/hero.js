@@ -63,7 +63,8 @@ const Hero = () => {
   const two = <h2 className="big-heading">Alexander Kyu.</h2>;
   const three = (
     <h3 className="big-heading">
-      I'm a software tinkerer, generative AI enthusiast, and HCI researcher and designer.
+      Software engineer, skilled in Data Science and HCI, enthusiastic about generative AI
+      applications.
     </h3>
   );
   const four = (
@@ -76,7 +77,9 @@ const Hero = () => {
         Carnegie Mellon University. Previously, I completed my Bachelor's Degree in Biomedical and
         Health Sciences Engineering from{' '}
         <a href="https://bme.unc.edu/">The Joint Department of Biomedical Engineering</a> at UNC
-        Chapel-Hill and North Carolina State University.
+        Chapel-Hill and North Carolina State University. That being said, my undergraduate degree
+        and research experience has given me a strong background in data science and machine
+        learning.
       </p>
     </>
   );
